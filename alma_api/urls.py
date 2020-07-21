@@ -7,6 +7,6 @@ router.register('order',orderlistView,basename='order')
 router.register('ordering',orderlistView,basename='ordering')
 
 urlpatterns = [
-    path('views/', include(router.urls)),
+    path('viewset/', include(router.urls)),
     # path('order/',orderlistView.as_view())
 ]
