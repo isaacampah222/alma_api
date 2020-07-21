@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from .serializers import orderListSerializer
 from .models import Order_List
 
-class orderlistView(viewsets.ModelViewSet):
+class orderlistView(viewsets.GenericViewSet):
     serializer_class = orderListSerializer
     queryset = Order_List.objects.all()
 
